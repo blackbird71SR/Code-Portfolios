@@ -17,7 +17,7 @@ print(name)
 print(title)
 print('Skills:')
 for i in skills:
-  print(skill)
+  print(i)
 ```
 
 ## How to Contribute to this repository
