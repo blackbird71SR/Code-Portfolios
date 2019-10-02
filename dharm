@@ -1,0 +1,8 @@
+name = 'Dharmendra kumar'
+interest_field = 'finance'
+skills = ['web development','finance']
+print(name)
+print(interest_field)
+print('skills:')
+for i in skills:
+	print(i)
