@@ -1,0 +1,263 @@
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Inconsolata|Lobster|News+Cycle|Pacifico|Permanent+Marker|Montserrat|Rubik+Mono+One|Satisfy|Sniglet|Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+     font-size: 30px;
+     font-family: 'Inconsolata';
+     background: white;
+     color:rgb(42, 42, 42);
+  }
+  
+  body{
+      width:100%;
+    }
+
+  /*NAV*/
+  .nav { 
+    top: 0;
+    height:70px;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position:fixed;
+    overflow: hidden;
+    background:rgba(250,250,250,1);
+/*     background: linear-gradient(to left, #F0DEFD 30%, #DEF3FD, #DEFDE0 , #FCF7DE, #FDDFDF);*/
+    box-shadow: 0px 0px 10px rgb(42, 42, 42);
+  }
+  
+  .nav-list {
+    width: 100%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-list li {
+    margin: 2%;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color:rgb(42, 42, 42);
+
+  }
+  
+  a:hover {
+    color:rgb(223, 179, 255);
+  }
+
+  /* Welcome */
+  
+  .welcome-section {
+    margin-top: 70px;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    color:rgb(42, 42, 42);
+    background-color: #DEF3FD;
+    background-image: url("https://fsmedia.imgix.net/03/39/f8/b3/7e72/4a7f/b85c/38d10185a98b.jpeg?rect=0%2C0%2C5785%2C2893&auto=format%2Ccompress&dpr=2&w=650");
+    background-position: right;
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    
+}
+
+#presen {
+    min-height: 50vh;
+    min-width: 50vh;
+    margin: 15% 0;
+    padding:2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+/*     font-family: "Inconsolata"; */
+    font-weight: lighter;
+    color:rgb(42, 42, 42);
+    background:rgba(250,250,250,1);
+    box-shadow: 5px 5px 20px 0px rgb(42, 42, 42);
+
+}
+
+#presen h1 {
+    color: rgb(223, 179, 255);
+}
+
+#presen h4 {
+     margin-top: 5%;
+}
+  
+
+/* Work */
+  
+  .projects-section {
+    padding-bottom: 5%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color:white;
+    background: rgb(42, 42, 42);;
+    box-shadow: 5px 5px 20px 0px rgb(42, 42, 42);
+  }
+
+  .projects-section-header{
+      text-align: center;
+      width: 100%;
+      padding: 2%;
+      color: rgb(42, 42, 42);
+      background: white;
+      letter-spacing: 5px;
+      box-shadow: 5px 5px 20px 0px rgb(42, 42, 42);
+  }
+
+ .projects-section a{
+    text-decoration: none;
+    color: white;
+ }
+
+ #Showall:hover{
+    color: rgb(223, 179, 255);
+ }
+
+ .projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 5%;
+ }
+
+
+@media (max-width: 900) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+ .project-tile {
+     margin: 2%;
+     display: flex;
+     flex-direction: column;
+     background: white;
+     border-width: 100px;
+ }
+
+ .bord {
+    border: solid;
+    border-color: white;
+ }
+
+.code {
+    color: white;
+    transition: color 0.3s ease-out;
+  }
+  
+  .project-tile:hover .code {
+    color: rgb(223, 179, 255);
+  }
+  
+  
+
+ .project-title{
+     text-align: center;
+     color: rgb(42, 42, 42);
+     background: white;
+ }
+
+ .project-image{
+     margin-top: 2%;
+ }
+
+  /* Contact */
+
+
+  .contact {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color:white;
+    background: linear-gradient( -225deg, #F0DEFD, #DEF3FD, #DEFDE0 , #FCF7DE, #FDDFDF);
+  }
+
+  .projects-section-contact{
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    color: rgb(42, 42, 42);
+    letter-spacing: 5px;
+    box-shadow: 5px 5px 20px 0px rgb(42, 42, 42);
+    background:rgba(250,250,250,1);
+}
+
+.contact-links{
+    margin:5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contact-links a {
+    margin: 2%;
+}
+    </style>
+
+</head>
+
+<!-- START NAV -->
+<body>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section" id="welc">About</a>
+      </li>
+      <li>
+        <a href="#projects" class="proj">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+<!-- END NAV -->
+
+<!-- Welcome -->
+
+  <section id="welcome-section" class="welcome-section">
+      <div id="presen">
+            <h1>&lt;Welcome/&gt;</h1>
+            <h4>I am Subhanshu
+                <p>a web developer</p>
+            </h4>
+            
+      </div>
+
+  </section>
+
+<!-- Work  -->
+  
+
+  
+</body>
