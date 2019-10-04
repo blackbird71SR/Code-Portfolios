@@ -1,0 +1,342 @@
+<html>
+	<head>
+		<title>Arsh's Portfolio</title>
+		<script src="porfolio.js"></script>
+		<style>
+			@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul.filters {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters > li > a {
+    display: block;
+    color: #434e5e;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+ul.filters > li > a:hover {
+    background-color: #e6e9ed;
+}
+
+ul.filters > li.active > a {
+    color: #fff;
+    background-color: rgba(252, 41, 74, 1);
+}
+
+.project {
+    position: relative;
+    margin-bottom: 50px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+}
+
+.project-head {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(67, 78, 94, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.project-hover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 41, 74, 0.9);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.project-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4.title {
+    color: #434e5e;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.project-btn {
+    margin-bottom: -40px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #eee;
+    border-radius: 0;
+    width: 120px;
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+}
+
+.project-btn:hover {
+    background-color: rgba(252, 41, 74, 1);
+    color: #fff;
+}
+
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #EEEEEE;
+}
+
+header {
+    height: 100vh;
+    background-color: #252525;
+    color: #F5F5F5;
+}
+
+header > div {
+    max-width: 650px;
+    padding-top: 50vh;
+    margin: 0 auto;
+}
+
+.introduction {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.7px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.line-number {
+    width: 14px;
+    margin-right: 1.5rem;
+    opacity: 0.33;
+    user-select: none;
+}
+
+.line-content,
+.line-content mark {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    opacity: 85%;
+}
+
+.line-content mark {
+    letter-spacing: 6px;
+}
+
+.empty-line {
+    background: linear-gradient(to bottom, #252423, #252525);
+}
+
+.empty-line .line-number {
+    display: block;
+}
+
+.empty-line .line-number-a {
+    opacity: 0.15;
+}
+
+.empty-line .line-number-b {
+    opacity: 0.1;
+}
+
+mark {
+    background: transparent;
+    color: rgba(252, 41, 74, 0.99);
+}
+
+.title-section {
+    margin: 0.5em 0;
+}
+
+.link {
+    position: absolute;
+    letter-spacing: 9px;
+    right: 4.8vh;
+}
+.link-work {
+    top: 12.1vh;
+}
+
+.link-contact-me{
+    top: 17.1vh;
+}
+
+.link-resume{
+    position: absolute;
+    letter-spacing: 9px;
+    right: 4.8vh;
+    top: 22.1vh;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(252, 41, 74, 0.99);
+    text-decoration: none;
+}
+
+#button {
+    display: inline-block;
+    background-color: rgba(252, 41, 74, 0.99);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #252525;
+}
+
+#button:active {
+    background-color: #252525;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer {
+    height: 100%;
+    padding: 10vh;
+    background-color: #252525;
+    color: #F5F5F5;
+}
+
+.copyright {
+    color: #787878;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.footer-content {
+    padding-bottom: 5vh;
+}
+
+.filters.filters-tag {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    line-height: 1;
+    text-align: center;
+}
+
+ul.filters.filters-tag>li>a {
+    display: block;
+    color: #434e5e;
+    border-radius: .25rem;
+    padding: 0.3rem 0.6rem;
+}
+
+ul.filters.filters-tag>li.active>a {
+    color: #fff;
+    background-color: rgba(252, 41, 74, 0.8);
+}
+
+.filters-tag {
+    font-size: 0.9rem;
+}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="introduction">
+				<div class="line">
+					<span class="line-number">1</span>
+					<span class="line-content">Hi there</span>
+				</div>
+				<div class="line">
+					<span class="line-number">2</span>
+					<span class="line-content">I'm <mark>Arsh</mark></span>
+				</div>
+				<div class="line">
+					<span class="line-number">3</span>
+					<span class="line-content">a <mark>Software Engineer</mark></span>
+				</div>
+				<div class="empty-line">
+					<div class="line-number line-number-a">4</div>
+					<div class="line-number line-number-b">5</div>
+				</div>
+			</div>
+		</header>
+		
+	</body>
+</html>
