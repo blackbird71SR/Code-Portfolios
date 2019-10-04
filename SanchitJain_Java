@@ -1,0 +1,47 @@
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Portfolio
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+		String Name="                   Sanchit Jain";
+		String description="Pre-final year Engineering student at NIT DELHI , pursuing ECE ";
+	    System.out.println();
+		String[] skills=new String[3];
+		skills[0]="Data structures And Algorithms";
+		skills[1]="Web development Full Stack";
+		skills[2]="Team Leadership";
+		String[] interests=new String[4];
+		interests[0]="Football And Cricket";
+		interests[1]="Photography";
+		interests[2]="Gaming";
+		interests[3]="Travelling";
+		
+		String[] languages=new String[3];
+		languages[0]="Hindi";
+		languages[1]="English";
+		languages[2]="German";
+		
+		System.out.println(Name);
+		System.out.println(description);
+		System.out.println();
+		System.out.println("                   SKILLS");
+		for (int i=0;i<3 ;i++ ){
+		    System.out.println(skills[i]);
+		} 
+		System.out.println("                   INTERETS");
+		for (int i=0;i<4 ;i++ ){
+		    System.out.println(interests[i]);
+		}
+		System.out.println("                   LANGUAGES KNOWN");
+		for (int i=0;i<3 ;i++ ){
+		    System.out.println(languages[i]);
+		}
+	}
+}
