@@ -3,7 +3,7 @@ The One Where Portfolios Shine!
 
 ## Aim
 
-This repository should eventually contain the various code portfolios. We all know that we can create simple portfolios using langugaes like  HTML and CSS, but here we are trying to do something differnt. Let's think of creating a code in python which will print your portfolio/personal information in terminal or maybe you create a GUI using Java and display your informataion in that. Possibilities are endless!
+This repository should eventually contain the various code portfolios. We all know that we can create simple portfolios using languages like HTML and CSS, but here we are trying to do something different. Let's think of creating a code in python which will print your portfolio/personal information in terminal or maybe you create a GUI using Java and display your informataion in that. Possibilities are endless!
 
 ## Example
 
