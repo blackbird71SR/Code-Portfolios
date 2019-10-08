@@ -1,0 +1,79 @@
+
+body{
+	line-height:normal;  
+}
+
+p, li   {
+  font-size:1.2em;
+}
+
+.navbar  {
+  border-radius: 0px;
+  font-size:1.2em;
+}
+
+.navbar-brand  {
+  font-size:1.8em;
+}
+
+/* Images */
+.hero-image  {
+  margin-top:50px;
+}
+
+.img-circle  {
+  margin:auto;
+  padding:10px;
+}
+
+#about, #portfolio, #contact  {
+ padding: 70px 20px 50px 20px;
+}
+
+#about  {
+  background-color:#0F0D0C;
+}
+
+#portfolio  {
+  background-color: #A1978B;
+}
+
+#contact  {
+  background-color: #F0E5D2;
+}
+
+.scroll-icon  {
+  position: relative; 
+  display: block; 
+  margin:auto; 
+  width:60px; 
+  font-size:3em;
+  margin-top:-1.5em;
+}
+
+.img-carousel   {
+  max-height: 400px;
+  display:block;
+   margin:auto;
+}
+
+.carousel-caption  {
+  display:block;
+  color:#000;
+  padding-top:0px;
+  position:static;
+  text-shadow:none;
+  margin-bottom:1em;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.well {
+  background-color:#F0E5D2;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+  top: 85%;
+}
