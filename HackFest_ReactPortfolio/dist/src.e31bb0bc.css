@@ -1,0 +1,114 @@
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(roboto-condensed.light.dc1ca484.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: EconomicaBold;
+    src: url(economica-bold.4b753017.ttf);
+    font-weight: 800;
+}
+
+
+body {
+    text-align: center;
+    font-size: 20px;
+    padding: 2.5%;
+    font-family: 'RobotoCondensed';
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'EconomicaBold';
+}
+
+.track {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.track-image {
+    width: 250px;
+    height: 250px;
+}
+
+.track-text {
+    position: absolute;
+    width: 250px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.track-icon {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    color: white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px;
+    opacity: 0.8;
+
+}
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(roboto-condensed.light.6709adf4.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: EconomicaBold;
+    src: url(economica-bold.12a9e27d.ttf);
+    font-weight: 800;
+
+}
+
+
+
+body {
+    text-align: center;
+    font-size: 20px;
+    padding: 2.5%;
+    font-family: 'RobotoCondensed';
+    
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'EconomicaBold';
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    /* when border radius is half the width and height, makes complete circle */
+    border-radius: 100px;
+}
+
+.title-fade-in {
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.title-fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+
+@keyframes fade-out {
+    from {opacity: 100}
+    to {opacity: 0}
+}
+
+@keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 100}
+}
