@@ -1,5 +1,5 @@
-name = 'Anagha'
-title = 'SECOND YEAR CSE UNDERGRADUATE - DATA SCIENCE ENTHUSIAST'
+name = input("Enter name: ")
+title = input("Enter title: ")
 skills = ['Deep Learning', 'Web Development']
 print(name)
 print(title)
