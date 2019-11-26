@@ -1,0 +1,491 @@
+           @import url('https://fonts.googleapis.com/css?family=Roboto');
+		   @import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
+		   @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+		   @import url("animacoes.css"); 
+
+		  
+		 /* 
+		 * {
+		    margin: 0;
+		    padding: 0;
+		    -webkit-box-sizing: border-box;
+		       -moz-box-sizing: border-box;
+		            box-sizing: border-box;
+		    }
+		    */;
+
+		   body{
+		   	   overflow: hidden; 
+			   color: #ff007f;
+			   font: normal 16px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			   font-weight: 300;
+			   background-color: #000;
+			   overflow-x: hidden;
+			   line-height: 1.5em;
+			   font-family: 'Lato', sans-serif;
+			   text-rendering: optimizeLegibility !important;
+			   -webkit-font-smoothing: antialiased !important;
+
+		   }
+		   .wrapper{
+
+		   }
+		   .marcador{
+		   	background: #fe9d9d;
+		   	border:1px solid #f94646;
+		   }
+		   .marcador-container{
+		   	background: #5bf946;
+		   	margin: auto;
+		   	padding: 0 20px;
+		   	border:1px solid #36ae26;
+		   }
+
+		 
+
+/*	MAIN HEADING
+------------------------------*/
+
+
+
+.main-heading
+{
+   background: url(../images/lingmarc.jpg) center center no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	color: #cfcfcf;
+        margin-top:0px;
+}
+
+.overlay{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	//background-attachment: fixed;
+        height:auto;
+        height:100%;
+        position:relative;
+}
+.main-heading container{
+	margin-top: 50%;
+
+}
+
+.overlay > .container
+{
+    padding:170px 0px;    
+}
+
+.main-heading >.overlay
+{
+    height: 750px;
+}
+p.lead
+{
+   position:relative;
+   top:5px;
+   color:#e3e3e3;
+   font-size:0.93em;
+   
+}
+
+.main-heading-content {
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+}
+
+.main-heading-title {
+	font-weight: 900;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size:3.5em;
+	text-shadow: rgba(0,0,0,0.498039) 2px 2px 2px;
+	letter-spacing: 0.02em;
+	
+}
+.main-heading-title span {
+	margin-left: 6px;
+}
+.main-heading-text {
+	font-size: 16px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.main-cursor {
+	opacity: 1;
+	-webkit-animation: blink .6s infinite;
+	-moz-animation: blink .6s infinite;
+	-ms-animation: blink .6s infinite;
+	-o-animation: blink .6s infinite;
+	animation: blink .6s infinite;
+}
+.main-heading btn btn-custom theme_background_color a{
+	color:pink;
+	background-color: transparent;
+	border-style: dotted;
+    border-width: 4px;
+    border-right: 1px solid #f00;	
+
+}
+
+
+/*----------*/
+
+section{
+	padding-top: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 40px;
+}
+.linguagemskills{
+}
+.ferramentaseframeprogramacao{
+	background-color: background-color:#c4046c ; #c4046c
+}
+.btn{
+	color:white;
+}
+
+	
+		   #caixa{
+		   	width: 300px;
+		   	height: 300px;
+		   	background: red;
+		   	position: relative;
+		   	/* abaixo a ordem de cd atributo -  animation-name; animation-duration; animation-delay ; animation-iteration-count; animation-direction;	*/
+		   	animation: animacao-caixa 5s 3s 2 alternate; 
+		   	/*colocando abaixo com as extensões de compatibilidade */
+		   	-webkit-animation: animacao-caixa 5s 3s 2 alternate; 
+		   	-moz-animation: animacao-caixa 5s 3s 2 alternate; 
+		   	-o-animation: animacao-caixa 5s 3s 2 alternate; 
+		   }
+
+		   header{
+		   	border: 1 px solid #ccc;
+   
+		   }      
+			@media (min-width: 1170px) {
+			   	.container {
+			   		max-width: 1170px;
+	                padding: 0;
+	            }
+	        }
+	    
+		   .intro{
+			   	display: table;
+				position:relative;
+				width: 100%;
+				height: 100vh;
+				padding: 100px 0;
+				color: white;
+				margin-top: 0;
+			
+		   }
+		   .intro:after{
+
+		   }
+		   nav {
+		   	padding: 1em;
+		   	width:100%;
+		   	left:0;
+		   	top:0;
+		   	display: inline;
+		   	background:black;
+		   }
+		   #menuprinc{
+		   	 list-style-type: none;
+		   	 display: inline;
+		   	 float: left;
+		   	 width: 100%;
+			 margin: auto;
+			 padding: 0;
+			 overflow: hidden;
+			 background-color: #333333;
+
+		   }
+		   .itemlista{
+		   	float: left;
+		   	background-color: #2C2A2A;
+		   }
+		   .itemlista a{
+		   	display: block;
+			color: white;
+			text-align: center;
+			padding: 22px;
+			text-decoration: none;
+		   }
+		   .itemlista a:hover{
+		   	background-color: #111111;
+
+		   }
+		   .itemlista a:active{
+		   	background-color: #333333;
+
+		   }
+	
+		   #fotoprogram{
+		   	 display: table;
+		   	 background: url('http://lab27.blob.core.windows.net/wordpress/2016/05/css-code.jpeg') no-repeat bottom center scroll;
+		   	 margin:auto;
+		   	 width:100%;
+			 height:100%;
+		   	 position:absolute ;
+		   	 left:0;
+		   	 top:0;
+		   	 opacity: 0.95;
+		   	 background-position: 30% 45%;
+			 background-size: cover;
+			 -webkit-filter:opacity(100%);
+		   	 z-index:-1;
+		   }
+		   #textoprincipalintro{
+		   	text-align:center;
+		   	padding:350px;
+		   	color: #fff;
+		   	color: #fff;
+		   	font-family: 'Roboto', sans-serif;
+			z-index: 10;
+
+		   }
+		   .circle {
+		   	background-color: #aaa;
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			overflow: hidden;
+			position: relative;
+			}
+		   .circle img {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			}
+			.centerAlgo{
+				position: relative;
+				align-items: center;
+				left:50%;
+			}
+		   h2{
+		   	font-family: 'Roboto', sans-serif;
+		   	color: #d6026b;
+		   	font-weight: bolder;
+		   	font-style: italic;
+		   }
+		    a {
+				padding: 5px 10px;
+				text-decoration: none;
+				color:white;
+			}
+
+			/*Links não visitados*/
+			a:link {
+				color: #d6026b;
+				/* background: #d6026b ; */
+			}
+
+			/*Links Visitados*/
+			a:visited{
+				color: #8c076c;
+			}
+			
+
+			/*Links Hover, passa o cursor sobre o link*/
+			a:hover{
+				color: #c4046c;
+				/* background: #ff1493; */
+			}
+
+			/*Links Ativos, quando clicado*/
+			a:active{
+				color: #ff1493;
+			}
+			.sectioninteressesecursos{
+				width:100%;
+				height:100%;
+				background: white;
+	            float: right;
+
+			}
+			.sectioninteressesecursos badge badge-danger a:visited{
+				color:white;
+			}
+			.sectioninteressesecursos badge badge-danger a:active{
+				color:white;
+			}
+			#titulosobremim{
+         		text-align:center;
+			   	padding:15px;
+			   	color: blue;
+			   	font-family: 'Roboto', sans-serif;
+			}
+
+
+		   /*Esquerda */
+		   .interesseshobbies{
+		   	 width:100%;
+			height:100%;
+            float: left; 		
+            border-right: 1px solid #f00;	
+            background-color: #ccc; /* Cinza */
+            text-align: center;
+		   }
+		   /*Direita*/
+		   .habilidadesecursos{
+		   	 width:100%;
+			 height:100%;
+			 background: white;
+             float: right;
+
+
+		   }
+		   .projetos{
+		   	 width:100%;
+			 height:100%;
+		   	 background: white;
+
+		   }
+         	#tituloprojetos{
+         		text-align:center;
+			   	padding:15px;
+			   	color: blue;
+			   	font-family: 'Roboto', sans-serif;
+
+         }
+		   .contato{
+		   	 width:100%;
+			 height:40%;
+		   	 background:#222;
+			 color: white;
+			 padding: 40px;
+			 margin-top: 50px;
+   
+         }
+         #titulocontato{
+         	text-align:center;
+		   	padding:15px;
+		   	color: white;
+		   	font-family: 'Roboto', sans-serif;
+		}
+		footer{
+		   	width:100%;
+			height:10%;
+		   	background: black;
+            text-align: center;
+            color:white;
+		   }
+
+
+
+
+
+
+
+
+
+
+		   /*----------------CONTACTUS
+
+-------------------------------------------------------*/
+
+.contato hr{
+	background-color: #ff007f;
+    width: 50px;
+    height: 3px;
+    border-top: 1px solid #34363e;
+    margin-top: 0;
+    display: inline-block;
+}
+.coriconescontatos{
+	color: #ff007f;
+}
+.corbotao{
+	background-color: #ff007f;
+	
+}
+.sub-form
+{
+    background:#222;
+}
+.sub-form>.container
+{
+    padding:80px 0px;
+}
+
+.form-control::-webkit-input-placeholder {
+ color: #8A8A8A;
+}
+ .form-control:-moz-placeholder {
+ color: #8A8A8A;
+}
+ .form-control::-moz-placeholder {
+ color: #8A8A8A;
+}
+ .form-control:-ms-input-placeholder {
+ color: #8A8A8A;
+}
+
+.form-control {
+  background-color: #222;
+  color: #4c4c4c;
+  box-shadow: none;
+  height: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0 1.5em;
+}
+#mc-form
+{
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.form-control:focus {
+  border-color: #fa5454;
+  outline: 0;
+  box-shadow: none;
+}
+
+.center-block
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.sub-form .btn
+{ 
+    padding: 1em; 
+}
+
+#mc-form .btn-default
+{
+    height: 60px;
+}
+
+#mc-notification {
+  margin: 0.75em 0 0;
+  font-weight: 400;
+  color: #8A8A8A;
+  font-size: 17px;
+}
+
+.error { color: #FF4C4C !important; }
+
+.valid { color: #4CAF50 !important; }
+
+.error i,
+.valid i { padding-right: .5em; }
+
+/*----------------SITE FOOTER
+
+				
