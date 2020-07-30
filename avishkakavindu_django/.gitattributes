@@ -1,0 +1,3 @@
+*.* linguist-language=python
+*.js linguist-detectable=false
+*.html linguist-detectable=false
