@@ -1,0 +1,60 @@
+.loader {
+  display: block;
+  margin: 2rem auto;
+}
+
+.loading {
+  text-align: center;
+  color: whitesmoke;
+  margin: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 2vh;
+  color: aliceblue;
+}
+
+.singleprobar {
+  margin: 0 auto 5vh auto;
+}
+
+.skillcard {
+  margin: 2vh auto;
+  border-radius: 12px;
+  border: 2px solid grey;
+  background-color: rgb(78, 85, 83);
+  animation: skills 2s ease-out forwards;
+  width: 30vw;
+  color : whitesmoke;
+}
+@keyframes skills {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(15px);
+  }
+}
+
+@media (min-width: 440px) and (max-width: 765px) {
+  .skillcard {
+    width: 100%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .skillcard {
+    width: 16rem;
+    margin: 2rem auto;
+  }
+}

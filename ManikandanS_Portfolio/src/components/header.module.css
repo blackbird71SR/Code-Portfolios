@@ -1,0 +1,12 @@
+.navlink,
+.navlink:hover {
+  text-decoration: none;
+  color: white;
+    margin: 0.7rem;
+    font-size: large;
+    font-weight: 500;
+}
+
+.brand{
+  font-weight: bolder;
+}

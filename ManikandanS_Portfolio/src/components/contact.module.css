@@ -1,0 +1,55 @@
+.contactCard{
+    margin:5vh auto;
+    border-radius: 10px;
+    box-shadow: grey;
+    z-index: 10;
+    animation: slidecard 3s ease-out forwards;
+}
+
+.label{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.title{
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.container{
+    margin : 1rem auto;
+}
+
+@keyframes slidecard {
+    0%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    50%{
+        opacity: 0.5;
+        transform: translateX(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(24px);
+    }
+}
+
+
+@media (min-width : 320px) and (max-width:500px){
+    .contactCard{
+        margin-top : 5vh;
+        margin-right : 2vw;
+        margin-left: 2vw;
+       width : 82vw;
+    }
+}
+
+@media (min-width : 501px ){
+    .contactCard{
+        width: 50vw;
+    }
+}

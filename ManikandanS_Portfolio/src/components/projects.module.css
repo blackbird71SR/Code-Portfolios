@@ -1,0 +1,82 @@
+.header{
+    display: flex;
+    justify-content: center;
+    color: rgb(231, 228, 228);
+    margin-top: 5vh;
+    
+}
+
+.loader{
+    display: block;
+    margin: 2rem auto;
+}
+
+.loading{
+    text-align: center;
+    color: whitesmoke;
+    margin: 1rem;}
+
+.procard{
+    margin : 7vh 4vw;
+    animation: slidecard 3s ease-out forwards;
+    width: 25em;
+    box-shadow: 3px 3px 3px grey;
+    
+}
+.image{
+    height : 40vh;
+}
+
+.btn{
+    display: flex   ;
+    justify-content: center;    
+}
+
+
+@keyframes slidecard {
+    0%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    50%{
+        opacity: 0.5;
+        transform: translateX(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(25px);
+    }
+}
+
+@media(max-width : 349px){
+    .procard {
+        width : 12rem;
+        margin : 5vh 2vh;
+        
+    }
+    .image{
+        height: 20vh;
+    }
+}
+
+@media (min-width : 350px ) and (max-width:480px){
+    .procard {
+        width : 16em;
+        margin : 5vh 2vh;
+        
+    }
+
+    .image{
+        height: 30vh;
+    }
+}
+
+@media (min-width : 765px ) and (max-width : 1100px)
+{
+    .procard{
+        width: 20em;
+        margin : 5vh auto;
+    }
+}
