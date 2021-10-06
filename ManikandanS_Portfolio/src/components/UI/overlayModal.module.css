@@ -1,0 +1,53 @@
+.overlayimage{
+    
+  
+    max-width : 55vw;
+    height : 20vh;
+    margin : 5px;
+    box-shadow: 12px 12px 12px grey;
+}
+
+.anchor,.anchor:hover{
+    text-decoration: none;
+    color : white;
+    padding : 0.2rem;
+}
+
+.tech,.description {
+    margin: 1.5rem;
+}
+
+
+.icon{
+    margin : 0.5rem;
+ 
+}
+
+.subhead{
+    font-weight: bold;
+    margin-top : 0.2rem;
+}
+
+@media (min-width : 993px){
+    .overlayimage{
+        width: 22vw;
+        height: 30vh;
+      
+    }
+}
+
+@media (max-width : 770px){
+    .overlayimage{
+        width: 55vw;
+        height: 30vh;
+        margin-bottom : 5vh;  
+      
+    }
+}
+
+@media (max-width : 380px){
+    .overlayimage{
+        height: 25vh;
+        
+    }
+}

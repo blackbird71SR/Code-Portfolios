@@ -1,0 +1,10 @@
+.card{
+   margin: 6vh 6vw;
+   text-align: center;
+   font-weight: bold;
+
+}
+
+.card .title{
+   font-size: xx-large;
+}
