@@ -1,0 +1,53 @@
+/******************************************************************************
+
+                            Welcome to my portfolio 
+                            
+
+*******************************************************************************/
+
+
+using System;
+class HelloWorld
+{
+
+  static void Main ()
+  {
+    
+    var name = "Name - Anshul Soni";
+    
+    var about = "About - I am a computer science pre-final year student, I love to contribute, build projects in the various domains and solve real world problems.";
+    
+    var hobbies = "Hobbies - Outdoor sports, Gaming, Producing music";
+    
+    var projects = "Projects - https://anshul-soni-portfolio.vercel.app/";
+    
+    var achievements = "Achievements - 1st prize in Tech event held at Symbiosis indore, for the best project.";
+
+
+      Console.WriteLine ("Anshul's Portfolio :)");
+      
+       Console.WriteLine ("---------------------------------");
+      
+      Console.WriteLine (name);
+      
+       Console.WriteLine ("---------------------------------");
+      
+      Console.WriteLine (about);
+      
+       Console.WriteLine ("---------------------------------");
+      
+      Console.WriteLine (hobbies);
+      
+       Console.WriteLine ("---------------------------------");
+      
+      Console.WriteLine (projects);
+      
+       Console.WriteLine ("---------------------------------");
+      
+      Console.WriteLine (achievements);
+      
+       Console.WriteLine ("---------------------------------");
+
+  }
+  
+}
