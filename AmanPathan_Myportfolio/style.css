@@ -1,0 +1,17 @@
+body {
+    font-family: 'Merriweather', serif; 
+    font-size:30px; 
+    letter-spacing: 6px; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background-color: #cfcecb ;
+}
+.typewriter{
+    padding: 0 15px 0 15px;
+    background-color: white;
+    width: 80%;
+    height: auto ; 
+    border: 5px solid #000;
+    border-radius: 15px;
+}
