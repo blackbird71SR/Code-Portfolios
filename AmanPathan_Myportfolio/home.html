@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="typewriter">
+        <h3>Portfolio :</h3>
+        <div id="typedtext"></div>
+    </div>
+</body>
+<script>
+var aText = new Array(
+"Hello! 🙂",
+"// My Name is Aman Pathan.",
+"   ",
+"// I Am a Student of B.E-IT in Dr.D.Y.Patil College of Engineering.",
+"   ",
+"// My Skills:",
+"// Frontend WebDevelopment",
+"// C++",
+"// Python",
+"// Arduino",
+"   ",
+"// I Am Very Interested in Development.",
+"// You Can Contact Me at @amanpathan526@gmail.com"
+);
+var iSpeed = 100;
+var iIndex = 0;
+var iArrLength = aText[0].length; 
+var iScrollAt = 20; 
+ 
+var iTextPos = 0; 
+var sContents = ''; 
+var iRow;
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+</script>
+</html>
